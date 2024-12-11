@@ -180,7 +180,7 @@ def find_client(conn, first_name=None, last_name=None, email=None, phone_number=
             print('Клиента не существует')
 
 
-with psycopg.connect("dbname=client_management user=postgres password=9159") as conn:
+with psycopg.connect("dbname=client_management user=postgres password=****") as conn:
     create_db(conn)
     add_client(conn, 1, 'Anna', 'Petrova', 'PetrovaAnna@mail.ru', '79151234567')
     add_client(conn, 2, 'Petr', 'Serov', 'SerovPetr@mail.ru')
